@@ -40,7 +40,7 @@ class BookAdapter : ListAdapter<Book, BookAdapter.VH>(DiffCallback()) {
 //        pass Data to UI and onClick
         fun build(book : Book){
             binding.titleBookIdCaredBook    .text = book . title
-            binding.contentBookIdCaredBook  .text = book . title
+            binding.contentBookIdCaredBook  .text = book . content
             binding.releaseAtBookIdCaredBook.text = formatDate(book.releaseAt)
             binding.authorBookIdCaredBook   .text = book.author
 
